@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Quiz Type</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>GBQuizApp</h1>
+        </div>
+        <nav>
+            <a href="/dashboard">Dashboard</a>
+            <a href="/profile">Profile</a>
+            <a href="/logout">Logout</a>
+        </nav>
+    </header>
+
+    <div class="quiz-type-selection">
+        <h2>Select Quiz Type</h2>
+        <div class="quiz-options">
+            <div class="quiz-option">
+                <h3>Geography Quiz</h3>
+                <p>Explore the world and test your knowledge of geography.</p>
+                <button onclick="window.location.href='/quiz/geography'">Start Geography Quiz</button>
+            </div>
+            <div class="quiz-option">
+                <h3>Science Quiz</h3>
+                <p>Explore the wonders of science with fun questions.</p>
+                <button onclick="window.location.href='/quiz/science'">Start Science Quiz</button>
+            </div>
+            <div class="quiz-option">
+                <h3>History Quiz</h3>
+                <p>Revisit historical events and figures.</p>
+                <button onclick="window.location.href='/quiz/history'">Start History Quiz</button>
+            </div>
+            <div class="quiz-option">
+                <h3>General Knowledge</h3>
+                <p>Test your overall knowledge on various topics.</p>
+                <button onclick="window.location.href='/quiz/general'">Start General Knowledge Quiz</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 GBQuizApp</p>
+    </footer>
+
+    <script src="../static/js/script.js"></script>
+</body>
+</html>
