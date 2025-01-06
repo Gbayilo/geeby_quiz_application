@@ -177,3 +177,150 @@ footer {
 .signup p a:hover, .login p a:hover {
   text-decoration: underline;
 }
+
+/* Dashboard Page*/
+.dashboard {
+  max-width: 900px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.dashboard h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #3E2723; 
+}
+
+.dashboard .features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.dashboard .feature {
+  flex: 1 1 calc(30% - 1rem);
+  min-width: 250px;
+  padding: 1.5rem;
+  background: #FAF3E0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard .feature h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #3E2723; 
+}
+
+.dashboard .feature p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.dashboard .btn {
+  display: inline-block;
+  padding: 0.8rem 1.2rem;
+  background: #3E2723; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.dashboard .btn:hover {
+  background: #5E3D2E; 
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  display: none; /
+}
+
+/* Dashboard Page Styles */
+.dashboard {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  background: #FAF3E0; 
+}
+
+/* Sidebar Styles */
+.sidebar {
+  flex: 1;
+  background: #D8C6A2; 
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h3 {
+  color: #3E2723; 
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 0.8rem;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #3E2723; 
+  font-weight: bold;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+  color: #5E3D2E; 
+}
+
+/* Main Content Styles */
+.main-content {
+  flex: 3;
+  background: #FFFFFF; 
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-content h2 {
+  color: #3E2723; 
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.main-content p {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.progress-card {
+  background: #D8C6A2; 
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.progress-card h3 {
+  color: #3E2723; 
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.progress-card p {
+  color: #3E2723; 
+  margin: 0.3rem 0;
+}
