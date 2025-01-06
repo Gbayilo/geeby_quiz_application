@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Session</title>
+    <link rel="stylesheet" href="../static/css/quiz.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <div class="quiz-container">
+        <div class="quiz-header mb-5">
+            <h2>General Knowledge Quiz</h2>
+            <p>Question <input id="current_question" value="0" class="w-3 text-center bg-inherit focus:outline-none focus:ring-0" readonly> of 5</p>
+        </div>
+
+        <div>
+              <!-- Start Screen -->
+              <div class="quiz_div text-center p-8 bg-gradient-to-br from-blue-50 to-blue-200 rounded-lg shadow-xl max-w-lg mx-auto">
+                <h1 class="text-3xl font-extrabold text-gray-800 mb-4">Welcome to Your Journey!</h1>
+                <p class="text-lg text-gray-600 mb-6">
+                  "The journey of a thousand miles begins with a single step."  
+                  <span class="block mt-2 font-medium text-gray-700">– Lao Tzu</span>
+                </p>
+                <p class="text-gray-700 text-md mb-8">
+                  Take the first step by clicking the button below. Explore, learn, and grow as you answer each question!
+                </p>
+                <button  
+                  class="next_btn bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-6 py-3 rounded-full shadow-lg transform hover:scale-105 hover:shadow-2xl transition-all duration-300 ease-in-out">
+                  Start Your Journey
+                </button>
+                
+              </div>
+        </div>
+
+        <!-- Question 1 -->
+        <div class="quiz_div">
+            <div class="quiz-question font-semibold mb-2">
+                <h3>1. What is the capital of Canada?</h3>
+            </div>
+
+            <div class="quiz-options">
+                <button class="option option_1 correct_option">A. Ottawa</button>
+                <button class="option option_1">B. Toronto</button>
+                <button class="option option_1">C. Vancouver</button>
+                <button class="option option_1">D. Montreal</button>
+            </div>
+        
+            <div class="quiz-navigation flex justify-between">
+                <button class="btn back_btn" id="">Back</button>
+                <button class="btn next_btn" id="">Next</button>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="quiz_div">
+            <div class="quiz-question font-semibold mb-2">
+                <h3>2. What currency is used in Japan?</h3>
+            </div>
+
+            <div class="quiz-options">
+                <button class="option option_2">A. Peso</button>
+                <button class="option option_2">B. Won</button>
+                <button class="option option_2">C. Yuan</button>
+                <button class="option option_2 correct_option">D. Yen</button>
+            </div>
+        
+            <div class="quiz-navigation flex justify-between">
+                <button class="btn back_btn" id="">Back</button>
+                <button class="btn next_btn" id="">Next</button>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="quiz_div">
+            <div class="quiz-question font-semibold mb-2">
+                <h3>3. What is the tallest mountain in the world?</h3>
+            </div>
+
+            <div class="quiz-options">
+                <button class="option option_3">A. K2</button>
+                <button class="option option_3 correct_option">B. Mount Everest</button>
+                <button class="option option_3">C. Lhotse</button>
+                <button class="option option_3">D. Makalu</button>
+            </div>
+        
+            <div class="quiz-navigation flex justify-between">
+                <button class="btn back_btn" id="">Back</button>
+                <button class="btn next_btn" id="">Next</button>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="quiz_div">
+            <div class="quiz-question font-semibold mb-2">
+                <h3>4. Who wrote the play "Romeo and Juliet"?</h3>
+            </div>
+
+            <div class="quiz-options">
+                <button class="option option_4">A. Charles Dickens</button>
+                <button class="option option_4 correct_option">B. William Shakespeare</button>
+                <button class="option option_4">C. Jane Austen</button>
+                <button class="option option_4">D. Mark Twain</button>
+            </div>
+        
+            <div class="quiz-navigation flex justify-between">
+                <button class="btn back_btn" id="">Back</button>
+                <button class="btn next_btn" id="">Next</button>
+            </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="quiz_div">
+            <div class="quiz-question font-semibold mb-2">
+                <h3>5. Who painted the Mona Lisa?</h3>
+            </div>
+
+            <div class="quiz-options">
+                <button class="option option_5">A. Vincent van Gogh</button>
+                <button class="option option_5">B. Pablo Picasso</button>
+                <button class="option option_5 correct_option">C. Leonardo da Vinci</button>
+                <button class="option option_5">D. Claude Monet</button>
+            </div>
+        
+            <div class="quiz-navigation flex justify-between">
+                <button class="btn back_btn" id="">Back</button>
+                <button class="btn next_btn" id="">Submit</button>
+            </div>
+        </div>
+
+        <!-- Quiz Completion Div -->
+        <div class="flex justify-center items-center">
+            <div id="quiz-completion" class="quiz_div text-center p-6 bg-white rounded-lg shadow-lg">
+                <h1 class="text-3xl font-bold text-gray-700 mb-4">Congratulations!</h1>
+                <p class="text-gray-600 text-lg mb-6">You have completed the quiz.</p>
+                <p class="text-gray-800 text-2xl font-semibold">
+                    Your Score: <input value="0" id="final_score" readonly class="text-blue-500 w-5 bg-inherit focus:outline-none focus:ring-0">
+                </p>
+                <div>
+                    <button id="restart_quiz" 
+                        class="mt-6 bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 transition">
+                        Restart Quiz
+                    </button>
+                    <button id="review_quiz" 
+                        class="mt-6 bg-green-500 text-white px-6 py-2 rounded hover:bg-green-600 transition">
+                        Review Quiz
+                    </button>
+                    <a href="/dashboard"
+                        class="mt-6 bg-black text-white px-6 py-3 rounded hover:bg-black transition">
+                        Go Home
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="hidden">
+            <input type="number" id="score_input" value="0" class="text-black">
+        </div>
+    
+    </div>
+
+    
+
+    <script src="../static/js/quiz.js"></script>
+</body>
