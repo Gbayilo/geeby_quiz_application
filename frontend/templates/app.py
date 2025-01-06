@@ -45,3 +45,39 @@ def login():
             flash('Incorrect Login Details')
             return redirect(url_for('login'))
     return render_template('login.html')
+
+
+@app.route('/dashboard', methods=['GET', 'POST'])
+def dashboard():
+    if 'user_id' not in session:
+        flash("You need to login before accessing the page")
+        return redirect(url_for('login'))
+    return render_template('dashboard.html', user_id=session.get('user_id'))
+
+@app.route('/signup', methods=['GET', 'POST'])
+def signup():
+
+    if request.method == "POST":
+        #Get the information from the html templates
+        username = request.form.get('username')
+        email = request.form.get('email')
+        password = request.form.get('password')
+        confirm_password = request.form.get('confirm_password')
+
+        if password != confirm_password:
+            flash("Confirm Password does not match with the password")
+            return redirect(url_for('signup'))
+        
+        # create a dictionary of the information
+        form_data = {
+            "username": username,
+            "email": email,
+            "password": password
+        }
+
+        response = requests.post(API_URL+'/signup', form_data)
+        
+        if response.status_code == 200:
+            return redirect(url_for('login'))
+        
+    return render_template('signup.html')
