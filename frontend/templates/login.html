@@ -28,6 +28,15 @@
           <button type="button" id="toggle-password" aria-label="Show Password">👁️</button>
         </div>
 
+        <!-- Flash Message -->
+         {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+            {% for category, message in messages %}
+              <p style="color: rgba(198, 137, 7, 0.518); font-weight: 700;">{{message}}</p>
+            {% endfor %}
+          {% endif %}
+         {% endwith %}
+        
         <button type="submit" class="btn">Log In</button>
         <p><a href="#">Forgot Password?</a></p>
         <p>Don't have an account? <a href="/signup">Sign Up here</a>.</p>
