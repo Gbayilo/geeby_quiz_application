@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Dashboard</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>GBQuizApp</h1>
+        </div>
+        <nav>
+            <a href="/profile">Profile</a>
+            <a href="/settings">Settings</a>
+            <a href="/logout">Logout</a>
+        </nav>
+    </header>
+
+    <div class="dashboard">
+        <div class="sidebar">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="/quiz/general">General Knowledge</a></li>
+                <li><a href="/quiz/Sports">Sport</a></li>
+                <li><a href="/quiz/geography">Geography</a></li>
+                <li><a href="/quiz/history">History</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <h2>Welcome, {{user_id}}!</h2>
+            <div class="progress-card">
+                <h3>Quiz Progress</h3>
+                <p>Sport Quiz: Completed 3/10</p>
+                <p>Science Quiz: Completed 5/10</p>
+                <p>History Quiz: Completed 1/10</p>
+            </div>
+
+            <div class="quiz-button">
+                <button onclick="window.location.href='/quiz/start'">Choose a quiz category</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Quiz App &copy; 2025</p>
+    </footer>
+
+    <script src="../static/js/script.js"></script>
+</body>
+</html>
