@@ -81,3 +81,33 @@ def signup():
             return redirect(url_for('login'))
         
     return render_template('signup.html')
+
+
+
+
+
+@app.route('/startquiz', methods=['GET', 'POST'])
+def startquiz():
+    return render_template('startquiz.html')
+
+
+@app.route('/general_knowledge')
+def general_knowledge():
+    return render_template('general_knowledge.html')
+
+
+@app.route('/logout')
+def logout():
+    logout_response = requests.get(API_URL+'/logout')
+    if logout_response.status_code == 200:
+        flash("Logged Out Successfully")
+        return redirect(url_for('login'))
+    return ('Error Occurred while Logging Out')
+
+app.route('/startquiz')
+def startquiz():
+    return render_template('startquiz.html')
+
+if __name__ == '__main__':
+    app.run(port=5000, debug=True)
+
