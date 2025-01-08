@@ -4,13 +4,12 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  color: #3E2723; /* Chocolate Brown */
-  background-color: #FAF3E0; /* Light Cream/Beige */
-}
+  color: #3E2723; 
+  background-color: #FAF3E0; 
 
 a {
   text-decoration: none;
-  color: #3E2723; /* Chocolate Brown */
+  color: #3E2723; 
 }
 
 a:hover {
@@ -22,7 +21,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: #3E2723; /* Chocolate Brown */
+  background: #3E2723; 
   color: white;
 }
 
@@ -39,8 +38,8 @@ nav a {
 .hero {
   text-align: center;
   padding: 4rem 2rem;
-  background: #D8C6A2; /* Soft Beige Accent */
-  color: #3E2723; /* Chocolate Brown */
+  background: #D8C6A2; 
+  color: #3E2723; 
 }
 
 .hero h1 {
@@ -55,7 +54,7 @@ nav a {
 
 .hero .btn {
   padding: 0.8rem 1.5rem;
-  background: #3E2723; /* Chocolate Brown */
+  background: #3E2723; 
   color: white;
   border: none;
   border-radius: 5px;
@@ -64,19 +63,19 @@ nav a {
 }
 
 .hero .btn:hover {
-  background: #5E3D2E; /* Slightly lighter chocolate brown */
+  background: #5E3D2E; 
 }
 
 .features {
   padding: 2rem;
   text-align: center;
-  background: #FAF3E0; /* Light Cream/Beige */
+  background: #FAF3E0; 
 }
 
 .features h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
-  color: #3E2723; /* Chocolate Brown */
+  color: #3E2723; 
 }
 
 .feature-list {
@@ -87,7 +86,7 @@ nav a {
 }
 
 .feature-item {
-  background: #D8C6A2; /* Soft Beige Accent */
+  background: #D8C6A2; 
   padding: 1rem;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -96,14 +95,14 @@ nav a {
 
 .feature-item h3 {
   font-size: 1.5rem;
-  color: #3E2723; /* Chocolate Brown */
+  color: #3E2723; 
   margin-bottom: 0.5rem;
 }
 
 footer {
   text-align: center;
   padding: 1rem;
-  background: #3E2723; /* Chocolate Brown */
+  background: #3E2723; 
   color: white;
 }
 
@@ -112,7 +111,7 @@ footer {
   max-width: 400px;
   margin: 2rem auto;
   padding: 2rem;
-  background: #FAF3E0; /* Light Cream/Beige */
+  background: #FAF3E0; 
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -120,7 +119,7 @@ footer {
 .signup h1, .login h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #3E2723; /* Chocolate Brown */
+  color: #3E2723; 
   text-align: center;
 }
 
@@ -133,7 +132,7 @@ footer {
 .signup-form label, .login-form label {
   font-size: 1rem;
   font-weight: bold;
-  color: #3E2723; /* Chocolate Brown */
+  color: #3E2723; 
 }
 
 .signup-form input, .login-form input {
@@ -147,12 +146,12 @@ footer {
 
 .signup-form input:focus, .login-form input:focus {
   outline: none;
-  border-color: #3E2723; /* Chocolate Brown */
+  border-color: #3E2723; 
 }
 
 .signup-form .btn, .login-form .btn {
   padding: 0.8rem;
-  background: #3E2723; /* Chocolate Brown */
+  background: #3E2723; 
   color: white;
   border: none;
   border-radius: 5px;
@@ -161,7 +160,7 @@ footer {
 }
 
 .signup-form .btn:hover, .login-form .btn:hover {
-  background: #5E3D2E; /* Slightly lighter chocolate brown */
+  background: #5E3D2E; 
 }
 
 .signup p, .login p {
@@ -171,7 +170,7 @@ footer {
 }
 
 .signup p a, .login p a {
-  color: #3E2723; /* Chocolate Brown */
+  color: #3E2723; 
 }
 
 .signup p a:hover, .login p a:hover {
@@ -188,7 +187,7 @@ footer {
 .dashboard h1 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
-  color: #3E2723; /* Chocolate Brown */
+  color: #3E2723; 
 }
 
 .dashboard .features {
@@ -202,7 +201,7 @@ footer {
   flex: 1 1 calc(30% - 1rem);
   min-width: 250px;
   padding: 1.5rem;
-  background: #FAF3E0; /* Light Cream/Beige */
+  background: #FAF3E0; 
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -210,7 +209,7 @@ footer {
 .dashboard .feature h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #3E2723; /* Chocolate Brown */
+  color: #3E2723; 
 }
 
 .dashboard .feature p {
@@ -222,7 +221,7 @@ footer {
 .dashboard .btn {
   display: inline-block;
   padding: 0.8rem 1.2rem;
-  background: #3E2723; /* Chocolate Brown */
+  background: #3E2723; 
   color: white;
   border: none;
   border-radius: 5px;
@@ -232,14 +231,14 @@ footer {
 }
 
 .dashboard .btn:hover {
-  background: #5E3D2E; /* Slightly lighter chocolate brown */
+  background: #5E3D2E; 
 }
 
 .error {
   color: red;
   font-size: 0.9rem;
   margin-top: 0.5rem;
-  display: none; /* Hidden by default */
+  display: none; 
 }
 
 /* Dashboard Page Styles */
@@ -247,20 +246,20 @@ footer {
   display: flex;
   gap: 2rem;
   padding: 2rem;
-  background: #FAF3E0; /* Light Cream/Beige */
+  background: #FAF3E0; 
 }
 
 /* Sidebar Styles */
 .sidebar {
   flex: 1;
-  background: #D8C6A2; /* Soft Beige Accent */
+  background: #D8C6A2; 
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar h3 {
-  color: #3E2723; /* Chocolate Brown */
+  color: #3E2723;
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
@@ -276,26 +275,26 @@ footer {
 
 .sidebar a {
   text-decoration: none;
-  color: #3E2723; /* Chocolate Brown */
+  color: #3E2723; 
   font-weight: bold;
 }
 
 .sidebar a:hover {
   text-decoration: underline;
-  color: #5E3D2E; /* Slightly lighter chocolate brown */
+  color: #5E3D2E; 
 }
 
 /* Main Content Styles */
 .main-content {
   flex: 3;
-  background: #FFFFFF; /* White */
+  background: #FFFFFF; 
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .main-content h2 {
-  color: #3E2723; /* Chocolate Brown */
+  color: #3E2723; 
   font-size: 2rem;
   margin-bottom: 1rem;
 }
@@ -307,7 +306,7 @@ footer {
 }
 
 .progress-card {
-  background: #D8C6A2; /* Soft Beige Accent */
+  background: #D8C6A2; 
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -315,19 +314,19 @@ footer {
 }
 
 .progress-card h3 {
-  color: #3E2723; /* Chocolate Brown */
+  color: #3E2723; 
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
 .progress-card p {
-  color: #3E2723; /* Chocolate Brown */
+  color: #3E2723; 
   margin: 0.3rem 0;
 }
 
 /* Button Styles */
 .quiz-button button {
-  background: #3E2723; /* Chocolate Brown */
+  background: #3E2723; 
   color: white;
   border: none;
   padding: 0.8rem 1.5rem;
@@ -338,14 +337,13 @@ footer {
 }
 
 .quiz-button button:hover {
-  background: #5E3D2E; /* Slightly lighter chocolate brown */
+  background: #5E3D2E; /
 }
 
-/* Footer */
 footer {
   text-align: center;
   padding: 1rem;
-  background: #3E2723; /* Chocolate Brown */
+  background: #3E2723; 
   color: white;
 }
 
@@ -359,7 +357,7 @@ footer {
 .quiz-type-selection h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
-  color: #3E2723; /* Chocolate Brown */
+  color: #3E2723; 
 }
 
 .quiz-options {
@@ -372,7 +370,7 @@ footer {
 .quiz-option {
   flex: 1 1 calc(45% - 1rem);
   min-width: 250px;
-  background: #FAF3E0; /* Light Cream/Beige */
+  background: #FAF3E0; 
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -382,7 +380,7 @@ footer {
 .quiz-option h3 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
-  color: #3E2723; /* Chocolate Brown */
+  color: #3E2723; 
 }
 
 .quiz-option p {
@@ -393,7 +391,7 @@ footer {
 
 .quiz-option button {
   padding: 0.8rem 1.2rem;
-  background: #3E2723; /* Chocolate Brown */
+  background: #3E2723; 
   color: white;
   border: none;
   border-radius: 5px;
@@ -402,7 +400,7 @@ footer {
 }
 
 .quiz-option button:hover {
-  background: #5E3D2E; /* Slightly lighter chocolate brown */
+  background: #5E3D2E; 
 }
 
 body {
@@ -492,7 +490,7 @@ header {
 
 /* Scoped styles for the quiz page */
 .quiz-header {
-  background: #3E2723; /* Chocolate Brown */
+  background: #3E2723; 
   color: white;
   padding: 1rem;
   text-align: center;
