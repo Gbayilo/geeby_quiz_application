@@ -17,4 +17,4 @@ The GBQuizApp is an interactive quiz application designed to test and enhance kn
 ## Tech Stack
 - Frontend: HTML, CSS, JavaScript (for dynamic behavior)
 - Backend: Python (Flask)
-- Database: SQLite for storing user data and quiz results
+- Database: SQLite to manage user data.
